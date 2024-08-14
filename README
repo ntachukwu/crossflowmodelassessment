@@ -75,7 +75,7 @@ This model provides a basic simulation of cross-flow filtration but includes som
 Clone repository and run.
 
 ```bash
-git clone 
+git clone git@github.com:ntachukwu/crossflowmodelassessment.git
 cd cross_flow_model
 python3 test_cross_flow_model.py
 cat cross_flow_model.log # To see logs
