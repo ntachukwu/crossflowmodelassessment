@@ -1,6 +1,6 @@
 # Cross Flow Filtration Model
 
-This Python package provides a cross-flow filtration model, simulating the filtration process using configurable parameters and models for membrane resistance and viscosity. It includes functionality for calculating permeate flow rates, flux, and running simulations with logging and validation of parameters.
+This Python package provides a cross-flow filtration model, simulating the filtration process using configurable parameters and models for membrane resistance and viscosity. It includes functionality for calculating permeate flow rates, flux, and running simulations with logging and validation of parameters. 
 
 ## Components
 
