@@ -72,12 +72,13 @@ This model provides a basic simulation of cross-flow filtration but includes som
 
 ## Installation
 
-Clone repository and run.
+Clone repository and run test.
 
 ```bash
 git clone git@github.com:ntachukwu/crossflowmodelassessment.git
+cd crossflowmodelassessment
 python3 test_cross_flow_model.py
-cat cross_flow_model.log # To see logs
+cat cross_flow_model.log
 ```
 
 ## Usage
