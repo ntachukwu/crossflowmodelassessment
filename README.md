@@ -64,11 +64,11 @@ Simulates the cross-flow filtration process.
 
 ## Limitations and Future Work
 This model provides a basic simulation of cross-flow filtration but includes some simplifications.
-**Membrane Resistance:** The current model uses a simplified representation of membrane resistance based solely on time. A more realistic model would consider factors like membrane fouling.
-**Concentration Dynamics:** The model simplifies concentration dynamics by assuming a sharp molecular weight cut-off. Future improvements could incorporate concentration polarization and membrane selectivity curves.
-**Mixture Complexity:** Currently, the model only handles water and a single solute (bovine casein). Expanding to multiple solutes and more complex mixtures (e.g., with suspended solids) would enhance the model's applicability.
-**Viscosity Changes**:** The model does not currently account for changes in viscosity due to changing solute concentrations.
-**Mixing:** Perfect mixing is assumed in the hold-up tank. Incorporating more realistic mixing models would improve accuracy.
+- **Membrane Resistance:** The current model uses a simplified representation of membrane resistance based solely on time. A more realistic model would consider factors like membrane fouling.
+- **Concentration Dynamics:** The model simplifies concentration dynamics by assuming a sharp molecular weight cut-off. Future improvements could incorporate concentration polarization and membrane selectivity curves.
+- **Mixture Complexity:** Currently, the model only handles water and a single solute (bovine casein). Expanding to multiple solutes and more complex mixtures (e.g., with suspended solids) would enhance the model's applicability.
+- **Viscosity Changes**:** The model does not currently account for changes in viscosity due to changing solute concentrations.
+- **Mixing:** Perfect mixing is assumed in the hold-up tank. Incorporating more realistic mixing models would improve accuracy.
 
 ## Installation
 
@@ -76,7 +76,6 @@ Clone repository and run.
 
 ```bash
 git clone git@github.com:ntachukwu/crossflowmodelassessment.git
-cd cross_flow_model
 python3 test_cross_flow_model.py
 cat cross_flow_model.log # To see logs
 ```
@@ -86,7 +85,6 @@ cat cross_flow_model.log # To see logs
 Here's an example of how to use the `CrossFlowFiltrationModel`:
 
 ```python
-from datetime import timedelta
 from core import CrossFlowFiltrationModel, CompletedSimulation
 
 # Initialize the model
@@ -100,7 +98,7 @@ model = CrossFlowFiltrationModel(
 )
 
 # Run the simulation
-simulation_result = model.run_simulation(time_step=timedelta(hours=1))
+simulation_result = model.run_simulation()
 
 # Access results
 print(f"Final Permeate Volume: {simulation_result.final_permeate_volume} L")
